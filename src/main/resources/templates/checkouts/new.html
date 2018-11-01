@@ -69,8 +69,10 @@
       container: '#bt-dropin',
       paypal: {
         flow: 'checkout',
-        amount: '1.99',
-        currency: 'USD'
+        amount: 1.99,
+        currency: 'EUR',
+        singleUse: true, // Required  
+        locale: 'de_de'   
       }
     }, function (createErr, instance) {
       form.addEventListener('submit', function (event) {
